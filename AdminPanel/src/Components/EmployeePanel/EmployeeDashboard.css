@@ -1,0 +1,54 @@
+
+/* Page Background */
+.dashboard-page {
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+/* Card */
+.dashboard-card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Box */
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* Activity Card */
+.activity-card {
+  border: none;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* Activity Items */
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,185 @@
+.role-wrapper {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Top Logo */
+.top-logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.top-logo h4 {
+  margin: 0;
+}
+
+.top-logo p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Main Container */
+.role-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Top Icon */
+.top-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.main-title {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.main-title span {
+  background: linear-gradient(90deg, #4facfe, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #aaa;
+}
+
+/* Divider Text */
+.divider-text {
+  margin-top: 10px;
+  color: #bbb;
+}
+
+/* Cards Layout */
+.cards-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Card Style */
+.role-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.role-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Colors */
+.blue {
+  border: 1px solid rgba(79, 172, 254, 0.6);
+}
+
+.purple {
+  border: 1px solid rgba(168, 85, 247, 0.6);
+}
+
+/* Card Icon */
+.card-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.role-card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.blue button {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.purple button {
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+}
+
+/* OR */
+.or-divider {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+
+/* Features container */
+.features {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Feature item */
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Icon box */
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(120, 120, 255, 0.3);
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 18px rgba(100, 100, 255, 0.25);
+}
+
+/* Icon size */
+.feature-icon i {
+  font-size: 20px;
+  color: #9aa7ff;
+}
+
+/* Text */
+.feature-item h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}

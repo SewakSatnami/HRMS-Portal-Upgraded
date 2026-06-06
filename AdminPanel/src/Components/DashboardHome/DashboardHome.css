@@ -1,0 +1,134 @@
+.dashboard-container {
+  padding: 20px;
+  background: #f5f7fb;
+}
+
+/* Search */
+.search-box {
+  width: 200px;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.stat-card .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Table Cards */
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.trend-card,
+.insight-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.05);
+  min-height: 260px;
+}
+
+.trend-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding-top: 16px;
+  min-height: 210px;
+}
+
+.trend-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+}
+
+.sparkline-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  width: 100%;
+  min-height: 110px;
+}
+
+.sparkline-bar {
+  width: 10px;
+  border-radius: 6px 6px 0 0;
+  transition: height 0.3s ease;
+}
+
+.trend-label {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+.mini-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mini-stat {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.insight-list {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.insight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: #f7f9fc;
+  border-radius: 12px;
+}
+
+.insight-item i {
+  font-size: 1.1rem;
+  color: #ffc107;
+  margin-top: 2px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .trend-chart {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .trend-bar-item {
+    width: auto;
+  }
+
+  .mini-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

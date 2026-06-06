@@ -1,0 +1,91 @@
+/* Fade animation */
+.fade-in {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card */
+.custom-card {
+  border-radius: 16px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gradient Heading */
+.gradient-text {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Inputs */
+.custom-input {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  border-color: #007bff;
+}
+
+/* Button */
+.btn-gradient {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.custom-dropdown {
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.dropdown-item:hover {
+  background-color: #f1faff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 15px !important;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+}

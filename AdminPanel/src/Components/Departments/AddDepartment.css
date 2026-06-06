@@ -1,0 +1,55 @@
+/* ================= INPUT ANIMATION ================= */
+
+.modern-input {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Focus effect */
+.modern-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* 💡 Bottom border effect */
+.modern-input {
+  border-bottom: 2px solid #ddd;
+}
+
+.modern-input:focus {
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* ✨ Placeholder animation */
+.modern-input::placeholder {
+  transition: 0.3s;
+}
+
+.modern-input:focus::placeholder {
+  opacity: 0.6;
+  transform: translateX(5px);
+}
+
+/* ================= BUTTON ================= */
+
+.modern-btn {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.modern-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* ================= TOAST ================= */
+
+.toast {
+  transition: all 0.5s ease;
+}

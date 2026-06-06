@@ -1,0 +1,165 @@
+/* Smooth fade-in */
+.container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    border: none;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+} 
+
+/* Title Gradient */
+h3 {
+    font-weight: 600;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+
+    /* Standard property */
+    background-clip: text;
+
+    /* For Chrome, Safari */
+    -webkit-background-clip: text;
+
+    /* Fallback */
+    color: transparent;
+
+    /* For WebKit browsers */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Button Style */
+.btn-success {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Select Styling */
+.form-select {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    border-color: #007bff;
+}
+
+/* Table Styling */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+/* Row Hover Animation */
+.table-hover tbody tr:hover {
+    background-color: #f1faff;
+    transform: scale(1.01);
+}
+
+/* Status Badges */
+.badge {
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+/* Container spacing for small screens */
+@media (max-width: 576px) {
+    .container {
+        margin-top: 20px !important;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px !important;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+/* Stack controls on mobile */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-5,
+    .col-md-4 {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+/* Table scroll for small devices */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Improve table readability on mobile */
+@media (max-width: 576px) {
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .badge {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+}
+
+/* Header responsiveness */
+@media (max-width: 576px) {
+    .d-flex {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+}

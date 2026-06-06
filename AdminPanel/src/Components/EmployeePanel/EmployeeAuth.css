@@ -1,0 +1,212 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔥 BACKGROUND */
+.auth-wrapper {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: radial-gradient(circle at top, #3b82f6, #0f172a);
+}
+
+/* 🔥 CARD */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 40px 30px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+
+  animation: fadeUp 0.6s ease;
+}
+
+/* 🔥 TEXT */
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* 🔥 INPUT GROUP */
+.input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+/* 🔥 INPUT */
+.input-group input {
+  width: 100%;
+  padding: 16px 12px 12px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-size: 14px;
+
+  outline: none;
+}
+
+/* 🔥 LABEL (FIXED POSITION) */
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+
+  color: #94a3b8;
+  font-size: 14px;
+
+  pointer-events: none;
+  transition: 0.3s;
+
+  background: transparent;
+}
+
+/* 🔥 FLOAT EFFECT (FIXED) */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #60a5fa;
+
+  background: #0f172a;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+
+/* 🔥 FOCUS EFFECT */
+.input-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59,130,246,0.5);
+}
+
+/* 🔥 BUTTON */
+.auth-btn {
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 12px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+}
+
+/* 🔥 TEXT LINK */
+.switch-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 PASSWORD ICON */
+.password-group {
+  position: relative;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #94a3b8;
+  transition: 0.2s;
+}
+
+.toggle-eye:hover {
+  color: #60a5fa;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* 🔥 ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+
+  .auth-card {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .auth-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .input-group input {
+    padding: 14px 10px 10px;
+  }
+}
+
+/* 📱 TABLET */
+@media (max-width: 768px) {
+  .auth-card {
+    max-width: 95%;
+  }
+}

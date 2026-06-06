@@ -1,0 +1,96 @@
+
+/* Page */
+.attendance-page {
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+/* Header */
+.attendance-header {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+}
+
+/* Filters */
+.filter-btn {
+  border-radius: 20px;
+  padding: 6px 16px;
+  border: none;
+  background: #e9ecef;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  transform: scale(1.05);
+}
+
+.active-filter {
+  background: #0d6efd;
+  color: white;
+  box-shadow: 0 4px 12px rgba(13,110,253,0.3);
+}
+
+/* Table Card */
+.attendance-table {
+  border: none;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.attendance-table:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* Table Header */
+table thead th {
+  color: #6c757d;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Row Hover */
+.table-row {
+  transition: all 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+}
+
+/* Badge */
+.badge {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Icon Hover */
+.bi-eye {
+  transition: 0.2s;
+}
+
+.bi-eye:hover {
+  transform: scale(1.2);
+}
+
+/* Action Card */
+.attendance-action-card {
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.attendance-action-card h5 {
+  margin-bottom: 0.75rem;
+}
+
+.attendance-action-buttons .btn {
+  min-width: 110px;
+}
+
+.bi-eye:hover {
+  transform: scale(1.2);
+}
